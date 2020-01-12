@@ -19,7 +19,7 @@ namespace AzureFunctionSQL
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req, ILogger log,
             ExecutionContext context)
         {
-            log.LogInformation("C# HTTP trigger function processed a request");
+            log.LogInformation("C# HTTP trigger function processed a request.");
 
             var config = new ConfigurationBuilder()
                  .SetBasePath(context.FunctionAppDirectory)
